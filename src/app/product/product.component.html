@@ -1,0 +1,7 @@
+<div id="pendingOrderBox">
+  <div *ngFor="let product of products" class="product">
+    Product: {{ product.name }}, Total Orders: {{ product.totalOrders }}
+  </div>
+</div>
+<button (click)="sortProducts()">Sort Products</button>
+<button (click)="randomizeProducts()">Randomize Products</button>
